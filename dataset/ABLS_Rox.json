@@ -1,0 +1,37 @@
+{
+	"name": "ABLS_Rox",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ABLS_Rox",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"CSV": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Rox"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().csv",
+					"type": "Expression"
+				},
+				"container": "rox"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
