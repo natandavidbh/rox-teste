@@ -200,7 +200,10 @@
 				"outputs": [
 					{
 						"referenceName": "ASQL_RoxDB",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Tabela": "[dbo].[Person.Person]"
+						}
 					}
 				]
 			}

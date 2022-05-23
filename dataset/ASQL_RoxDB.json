@@ -5,6 +5,11 @@
 			"referenceName": "ASQL_RoxDB",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Tabela": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "Rox"
 		},
