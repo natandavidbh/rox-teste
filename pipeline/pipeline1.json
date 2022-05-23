@@ -53,11 +53,7 @@
 				"outputs": [
 					{
 						"referenceName": "ASQL_RoxDB",
-						"type": "DatasetReference",
-						"parameters": {
-							"Schema": "dbo",
-							"Tabela": "Person.Person"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}

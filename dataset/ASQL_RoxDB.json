@@ -5,19 +5,15 @@
 			"referenceName": "ASQL_RoxDB",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"Schema": {
-				"type": "string"
-			},
-			"Tabela": {
-				"type": "string"
-			}
-		},
 		"folder": {
 			"name": "Rox"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Person.Person"
+		}
 	}
 }
