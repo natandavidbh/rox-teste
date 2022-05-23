@@ -29,7 +29,9 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -47,6 +49,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 2
+								},
 								"sink": {
 									"name": "PersonType",
 									"type": "String",
@@ -54,6 +60,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 3
+								},
 								"sink": {
 									"name": "NameStyle",
 									"type": "Int32",
@@ -61,6 +71,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 4
+								},
 								"sink": {
 									"name": "Title",
 									"type": "String",
@@ -68,6 +82,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 5
+								},
 								"sink": {
 									"name": "FirstName",
 									"type": "String",
@@ -75,6 +93,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 6
+								},
 								"sink": {
 									"name": "MiddleName",
 									"type": "String",
@@ -82,6 +104,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 7
+								},
 								"sink": {
 									"name": "LastName",
 									"type": "String",
@@ -89,6 +115,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 8
+								},
 								"sink": {
 									"name": "Suffix",
 									"type": "String",
@@ -96,6 +126,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 9
+								},
 								"sink": {
 									"name": "EmailPromotion",
 									"type": "Int32",
@@ -103,6 +137,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 10
+								},
 								"sink": {
 									"name": "AdditionalContactInfo",
 									"type": "String",
@@ -110,6 +148,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 11
+								},
 								"sink": {
 									"name": "Demographics",
 									"type": "String",
@@ -117,6 +159,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 12
+								},
 								"sink": {
 									"name": "rowguid",
 									"type": "String",
@@ -124,6 +170,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 13
+								},
 								"sink": {
 									"name": "ModifiedDate",
 									"type": "DateTime",
