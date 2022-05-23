@@ -1,0 +1,13 @@
+{
+	"name": "ABLS_Rox",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Conta de armazenamento que guarda os arquivos da empresa ROX",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=rox10012001;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDFBNEQ3QTNDLTMyNkMtNDdEQi04OEMyLUMxOEU1NUI4Q0JBNl9iMWIwMGQwMS0wMjZlLTRkMGMtYWFiYS05MTM2MmIyNmY1MzciDQp9"
+		}
+	}
+}
