@@ -1,9 +1,9 @@
 {
-	"name": "Load_Person",
+	"name": "PL_Person",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Load_Person",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {

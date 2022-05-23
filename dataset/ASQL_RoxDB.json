@@ -10,10 +10,6 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "Person.Person"
-		}
+		"schema": []
 	}
 }
