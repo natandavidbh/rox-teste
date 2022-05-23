@@ -6,6 +6,9 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
+			"Schema": {
+				"type": "string"
+			},
 			"Tabela": {
 				"type": "string"
 			}
@@ -15,6 +18,16 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().Schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().Tabela",
+				"type": "Expression"
+			}
+		}
 	}
 }
