@@ -26,7 +26,7 @@ Arquivo: Diagram_Rox.drawio
   
   Blob: rox10012001
   
-  Container: Rox
+  Container: rox
   
   Arquivos para Ingestão: Person.Person.csv, Production.Product.csv, Sales.Customer.csv, Sales.SalesOrderDetail.csv, Sales.SalesOrderHeader.csv, Sales.SpecialOfferProduct.csv;
   
@@ -35,7 +35,7 @@ Arquivo: Diagram_Rox.drawio
 
 ### - Azure Data Factory
   
-  Name: Rox
+  Name: rox
   
   Serviços Associados
   
