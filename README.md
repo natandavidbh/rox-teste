@@ -55,6 +55,8 @@ Arquivo: Diagram_Rox.drawio
   
   Pipelines/PL-Rox
   
+  OBS: Foi feito a criação dos Pipelines separados, para caso seja necessário atuar neles de forma independente.
+  
     - PL_Customer: Carrega o arquivo Sales.Customer.csv para o banco de dados;
     
     - PL_Person: Carrega o arquivo Person.Person.csv para o banco de dados;
@@ -67,8 +69,11 @@ Arquivo: Diagram_Rox.drawio
     
     - PL_SpecialOfferProduct: Carrega o arquivo Sales.SpecialOfferProduct.csv para o banco de dados;
     
+    - PL_Orquestrator: Carregar os pipelines em ordem para garantir a integridade referencial;
     
-   ![image](https://user-images.githubusercontent.com/106120582/169951625-fac89e9e-a7f2-4b8a-a6cf-e009b9f74745.png)
+    
+   ![image](https://user-images.githubusercontent.com/106120582/170150469-549d2c62-46d8-4310-8d91-7bb244b91103.png)
+
 
 
     
