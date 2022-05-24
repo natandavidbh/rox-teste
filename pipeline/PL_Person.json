@@ -201,8 +201,8 @@
 						"referenceName": "ASQL_RoxDB",
 						"type": "DatasetReference",
 						"parameters": {
-							"Schema": "[dbo]",
-							"Tabela": "[Person.Person]"
+							"Schema": "Person",
+							"Tabela": "Person.Person"
 						}
 					}
 				]
