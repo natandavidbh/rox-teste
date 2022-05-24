@@ -16,7 +16,7 @@
 				}
 			},
 			{
-				"name": "Execute Pipeline1",
+				"name": "PL_Customer",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
@@ -28,15 +28,19 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_Customer",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
 			{
-				"name": "Execute Pipeline1_copy1",
+				"name": "PL_SalesOrderHeader",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "Execute Pipeline1",
+						"activity": "PL_Customer",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -44,15 +48,19 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_SalesOrderHeader",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
 			{
-				"name": "Execute Pipeline1_copy1_copy1",
+				"name": "PL_Product",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "Execute Pipeline1_copy1",
+						"activity": "PL_SalesOrderHeader",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -60,15 +68,19 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_Product",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
 			{
-				"name": "Execute Pipeline1_copy1_copy2",
+				"name": "PL_SpecialOfferProduct",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "Execute Pipeline1_copy1_copy1",
+						"activity": "PL_Product",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -76,15 +88,19 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_SpecialOfferProduct",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
 			{
-				"name": "Execute Pipeline1_copy1_copy3",
+				"name": "PL_SalesOrderDetail",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "Execute Pipeline1_copy1_copy2",
+						"activity": "PL_SpecialOfferProduct",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -92,6 +108,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_SalesOrderDetail",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			}
