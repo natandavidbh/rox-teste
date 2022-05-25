@@ -1,6 +1,6 @@
 # rox-teste
 
-Documentação refere a modelagem, infraestrutura, ingestão de dados da empresa que produz bicicletas. 
+Documentação refere a Modelagem, Infraestrutura, Ingestão de Dados da empresa que produz bicicletas. 
 
 ### Modelagem Conceitual dos Dados
 
@@ -8,42 +8,66 @@ Arquivo: Diagram_Rox.drawio
 
 ![image](https://user-images.githubusercontent.com/106120582/169947455-1df015fa-d9a2-4b37-9cc4-61fdba28e7c0.png)
 
-### Infraestrutura Necessária: 
-### - Azure SQL Database
+#
 
-  Nome do servidor: azure-rox.database.windows.net
+## Microsoft Azure
+
+Foi utilizada o Microsoft Azure que é uma plataforma destinada à execução de aplicativos e serviços, baseada nos conceitos da computação em nuvem.
+
+### Infraestrutura Necessária: 
+### - Azure SQL Database (Sql Server)
+Banco de Dados SQL do Azure é um serviço de banco de dados relacional totalmente gerenciado e sempre atualizado, criado para a nuvem.
+
+     Nome do servidor: azure-rox.database.windows.net
   
-  Grupo de recursos: teste-rox
+     Grupo de recursos: teste-rox
   
-  Localidade: East US
+     Localidade: East US
   
-  Subscrição: Azure subscription 1
+     Subscrição: Azure subscription 1
+  
   
   ![image](https://user-images.githubusercontent.com/106120582/169950146-132badfe-64ec-4f3b-8f1f-64fa36f677d4.png)
 
+#
 
 ### - Storage Accounts
+Uma conta de armazenamento do Azure contém todos os seus objetos de dados do Armazenamento do Azure.
   
-  Blob: rox10012001
+    Blob: rox10012001
   
-  Container: rox
+    Container: rox
   
-  Arquivos para Ingestão: Person.Person.csv, Production.Product.csv, Sales.Customer.csv, Sales.SalesOrderDetail.csv, Sales.SalesOrderHeader.csv, Sales.SpecialOfferProduct.csv;
+  ##### Arquivos para Ingestão 
+  
+      Person.Person.csv; 
+      
+      Production.Product.csv; 
+      
+      Sales.Customer.csv; 
+      
+      Sales.SalesOrderDetail.csv; 
+      
+      Sales.SalesOrderHeader.csv; 
+      
+      Sales.SpecialOfferProduct.csv;
   
   ![image](https://user-images.githubusercontent.com/106120582/169950237-3447ec5f-ace6-4649-bdb1-6f85fd68d5c0.png)
 
+#
 
 ### - Azure Data Factory
+Azure Data Factory é o serviço ETL na nuvem do Azure para integração e transformação de dados.
   
-  Name: rox
+      Name: rox
   
-  Serviços Associados
+  ##### Serviços Associados
   
     - ABLS_Rox: Armazenamento de Blobs do Azure
     
     - ASQL_RoxDB: Base de Dados SQL do Azure
   
-  DataSets/Rox
+  ##### DataSets/Rox
   
     - ABLS_Rox
      
@@ -53,7 +77,7 @@ Arquivo: Diagram_Rox.drawio
     
       Foi criado os Parâmetros Schema e Tabela para que seja possível passar o nome da Tabela do Banco de Dados;
   
-  Pipelines/PL-Rox
+  ##### Pipelines/PL-Rox
   
   OBS: Foi feito a criação dos Pipelines separados, para caso seja necessário atuar neles de forma independente.
   
@@ -74,6 +98,14 @@ Arquivo: Diagram_Rox.drawio
     
    ![image](https://user-images.githubusercontent.com/106120582/170150469-549d2c62-46d8-4310-8d91-7bb244b91103.png)
 
+  #
+  
+  # Microsoft SQL Server Management Studio
+  
+  ![image](https://user-images.githubusercontent.com/106120582/170183677-d52754b8-157d-42c1-a9ac-eed7d03fc501.png)
+  
+  Foi utilizado para conectar no servidor do Azure SQL Database
+  
+  Criação dos Schemas, Tabelas e Constraints
 
 
-    
