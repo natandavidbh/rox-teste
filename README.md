@@ -18,6 +18,10 @@ Foi utilizada o Microsoft Azure que é uma plataforma destinada à execução de
 ### - Azure SQL Database (Sql Server)
 Banco de Dados SQL do Azure é um serviço de banco de dados relacional totalmente gerenciado e sempre atualizado, criado para a nuvem.
 
+  Criação dos Schemas, Tabelas e Constraints
+
+  https://github.com/natandavidbh/Database_Rox
+
      Nome do servidor: azure-rox.database.windows.net
   
      Grupo de recursos: teste-rox
@@ -100,13 +104,4 @@ Azure Data Factory é o serviço ETL na nuvem do Azure para integração e trans
 
   #
   
-  # Microsoft SQL Server Management Studio
-  O SSMS (SQL Server Management Studio) é um ambiente integrado para o gerenciamento de qualquer infraestrutura de SQL.
-  
-  ![image](https://user-images.githubusercontent.com/106120582/170183677-d52754b8-157d-42c1-a9ac-eed7d03fc501.png)
-  
-  Foi utilizado para conectar no servidor do Azure SQL Database
-  
-  Criação dos Schemas, Tabelas e Constraints
 
-  https://github.com/natandavidbh/Database_Rox
