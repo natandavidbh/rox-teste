@@ -101,6 +101,7 @@ Azure Data Factory é o serviço ETL na nuvem do Azure para integração e trans
   #
   
   # Microsoft SQL Server Management Studio
+  O SSMS (SQL Server Management Studio) é um ambiente integrado para o gerenciamento de qualquer infraestrutura de SQL.
   
   ![image](https://user-images.githubusercontent.com/106120582/170183677-d52754b8-157d-42c1-a9ac-eed7d03fc501.png)
   
@@ -108,4 +109,4 @@ Azure Data Factory é o serviço ETL na nuvem do Azure para integração e trans
   
   Criação dos Schemas, Tabelas e Constraints
 
-
+  https://github.com/natandavidbh/Database_Rox
